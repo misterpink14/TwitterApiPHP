@@ -30,14 +30,14 @@ foreach ($search as $value)
 	$path = '/1.1/search/tweets.json'; // api call path
 	// https://dev.twitter.com/rest/public is where all the urls are located
 	
-	$oauth = array(
+	$oauth = [
 	    'oauth_consumer_key' => $consumer_key,
 	    'oauth_token' => $token,
 	    'oauth_nonce' => (string)mt_rand(),
 	    'oauth_timestamp' => time(),
 	    'oauth_signature_method' => 'HMAC-SHA1',
 	    'oauth_version' => '1.0'
-	);
+	];
 	
 	// The following parameters are for the http call
 	// parameter => value
