@@ -41,10 +41,10 @@ foreach ($search as $value)
 	
 	// The following parameters are for the http call
 	// parameter => value
-	$query = array( // query parameters
+	$query = [ // query parameters
 	    'q' => $value,
 	    'count' => '1'
-	);
+	];
 
 	$oauth = array_map("rawurlencode", $oauth); 
 	$query = array_map("rawurlencode", $query);
